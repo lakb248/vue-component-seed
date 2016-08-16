@@ -7,7 +7,7 @@
     "build": "webpack --progress --config webpack.prod.config.js"
   },
   "keywords": [
-    "vue-component"
+    "vue-component",
     "vuejs"
   ],
   "author": "lakb248@gmail.com",

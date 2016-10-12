@@ -6,7 +6,7 @@ var config = require('./webpack.base.config');
 
 config.entry = './src/index.js';
 config.output = {
-    filename: '${name}.min.js',
+    filename: './dist/${name}.min.js',
     library: '${bigName}',
     libraryTarget: 'umd'
 };

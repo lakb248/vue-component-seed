@@ -1,14 +1,21 @@
+var webpack = require('webpack');
 var baseConfig = require('./webpack.base.config');
 var merge = require('webpack-merge');
 delete baseConfig.entry;
 
-var webpackConfig = merge(baseConfig, {
-    vue: {
-        loaders: {
-            js: 'isparta'
+// add isparta-loader to vue file
+var webpackConfig = baseConfig;
+webpackConfig.plugins = (baseConfig.plugins || []).concat([
+    new webpack.LoaderOptionsPlugin({
+        options: {
+            vue: {
+                loaders: {
+                    js: 'isparta'
+                }
+            }
         }
-    }
-});
+    })
+]);
 
 module.exports = function(config) {
     config.set({
@@ -24,7 +31,7 @@ module.exports = function(config) {
         coverageReporter: {
             dir: './coverage',
             reporters: [
-                {type: 'html', subdir: './test/coverage'},
+                {type: 'html'},
                 {type: 'text-summary'}
             ]
         },

@@ -1,6 +1,6 @@
 {
   "name": "${name}",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a ${name} implements by vuejs",
   "main": "./dist/${name}.min.js",
   "scripts": {

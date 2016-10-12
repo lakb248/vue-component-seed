@@ -6,8 +6,8 @@ var config = require('./webpack.base.config');
 
 config.entry = './src/index.js';
 config.output = {
-    filename: 'vue-component.min.js',
-    library: 'vue-component',
+    filename: '${name}.min.js',
+    library: '${bigName}',
     libraryTarget: 'umd'
 };
 

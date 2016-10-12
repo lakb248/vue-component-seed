@@ -1,7 +1,7 @@
 {
-  "name": "{{name}}",
+  "name": "${name}",
   "version": "0.0.1",
-  "description": "a {{name}} implements by vuejs",
+  "description": "a ${name} implements by vuejs",
   "main": "./src/index.js",
   "scripts": {
     "dev": "webpack-dashboard -p 3001 -- webpack-dev-server --watch --progress --config webpack.dev.config.js --port 8888",

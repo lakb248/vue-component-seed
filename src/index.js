@@ -1,3 +1,3 @@
-import VueComponent from './{{name}}.vue';
+import VueComponent from './${name}.vue';
 
-module.exports = {{bigName}};
+module.exports = ${bigName};

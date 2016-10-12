@@ -1,2 +1,2 @@
-# {{name}}
-{{name}} implements by vuejs
+# ${name}
+${name} implements by vuejs

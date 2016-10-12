@@ -1,2 +1,2 @@
-# vue-component-seed
-A seed for vue component
+# {{name}}
+{{name}} implements by vuejs

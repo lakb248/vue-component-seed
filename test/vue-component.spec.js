@@ -1,20 +1,20 @@
 /* global describe, it, expect */
 import Vue from 'vue';
-import VueComponent from '../src/vue-component.vue';
+import {{bigName}} from '../src/{{name}}.vue';
 
-describe('vue-component.vue', () => {
+describe('{{name}}.vue', () => {
     it('should have correct text', () => {
-        expect(VueComponent.data().text).toBe('Hello Vue-Component');
+        expect({{bigName}}.data().text).toBe('Hello {{bigName}}');
     });
 
     it('should render correct text', () => {
         const vm = new Vue({
-            template: '<div><vue-component></vue-component></div>',
+            template: '<div><{{name}}></{{name}}></div>',
             components: {
-                'vue-component': VueComponent
+                '{{name}}': {{bigName}}
             }
         }).$mount();
         expect(vm.$el.querySelector('h2').textContent)
-            .toBe('Hello Vue-Component');
+            .toBe('Hello {{bigName}}');
     });
 });

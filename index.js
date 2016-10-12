@@ -1,10 +1,10 @@
 import Vue from 'vue';
-import VueComponent from './src/vue-component.vue';
+import {{bigName}} from './src/{{name}}.vue';
 
 new Vue({
     el: '#container',
     components: {
-        'vue-component': VueComponent
+        '{{name}}': {{bigName}}
     },
     data() {
         return {};

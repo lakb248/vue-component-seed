@@ -1,2 +1,2 @@
-# ${name}
-${name} implements by vuejs
+# vue-component-seed
+A seed for vue component

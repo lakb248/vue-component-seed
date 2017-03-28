@@ -15,7 +15,7 @@
   ],
   "author": "lakb248@gmail.com",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
     "vue": "^2.0.1"
   },
   "devDependencies": {

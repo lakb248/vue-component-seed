@@ -20,8 +20,8 @@ config.plugins = (config.plugins || []).concat([
     }),
     new webpack.DefinePlugin({
         'process.env': {
-	    NODE_ENV: '"production"'
-	}
+            NODE_ENV: '"production"'
+        }
     })
 ]);
 module.exports = config;
